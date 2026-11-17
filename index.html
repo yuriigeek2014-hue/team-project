@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <header></header>
+    <main>
+        <section class="registration" id="registration">
+            <div class="registration__info">
+                <p class="registration__eyebrow">Подія для майбутніх розробників</p>
+                <h2>HTML and CSS</h2>
+                <p>
+                Обери напрям, познайомся з IT-командою та створи свій перший
+                командний вебкомпонент.
+                </p>
+
+                <ul class="registration__facts">
+                <li>📅 18 жовтня</li>
+                <li>🕙 11:00–14:00</li>
+                <li>💻 Онлайн</li>
+                </ul>
+            </div>
+
+            <form class="signup-form" action="#" method="post">
+                <div class="form-field">
+                <label for="student-name">Ім'я</label>
+                <input
+                    type="text"
+                    id="student-name"
+                    name="student-name"
+                    placeholder="Наприклад, Марко"
+                    required
+                >
+                </div>
+
+                <div class="form-field">
+                <label for="student-email">Email</label>
+                <input
+                    type="email"
+                    id="student-email"
+                    name="student-email"
+                    placeholder="name@example.com"
+                    required
+                >
+                </div>
+
+                <div class="form-field">
+                <label for="student-age">Вік</label>
+                <input
+                    type="number"
+                    id="student-age"
+                    name="student-age"
+                    placeholder="15"
+                    required
+                    min="10"
+                    max="17"
+                >
+                </div>
+
+                <div class="form-field">
+                <label for="track">Обери напрям</label>
+                <select id="track" name="track" required>
+                    <option value="">Обери варіант</option>
+                    <option value="frontend">FrontEnd</option>
+                    <option value="design">UI/UX Design</option>
+                    <option value="qa">QA</option>
+                    <option value="demoday">Demoday</option>
+                </select>
+                </div>
+
+                <label class="form-check">
+                <input type="checkbox" name="rules" required>
+                <span>Я погоджуюся з правилами участі</span>
+                </label>
+
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </section>
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>
